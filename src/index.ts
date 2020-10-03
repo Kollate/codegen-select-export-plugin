@@ -20,7 +20,9 @@ export const plugin = (
   if (config.allObjectTypes) {
     exportNames = [
       ...exportNames,
-      ...types.filter((a) => isObjectType(schema.getType(a))),
+      ...types
+        .filter((a) => isObjectType(schema.getType(a)))
+        .filter((a) => !a.startsWith("__")),
     ];
   }
   if (config.allEnumTypes) {
