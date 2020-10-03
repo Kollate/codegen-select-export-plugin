@@ -1,6 +1,6 @@
 {
   "name": "graphql-codegen-select-export",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Export selected types for GraphQL Codegen plugin",
   "engines": {
     "node": ">= 12.13 <13"
