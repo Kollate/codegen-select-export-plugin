@@ -66,6 +66,10 @@
   "dependencies": {
     "@graphql-codegen/plugin-helpers": "^1.17.9",
     "@graphql-inspector/core": "^2.2.0",
+    "graphql": "^15.3.0",
     "module-alias": "^2.2.2"
+  },
+  "peerDependencies": {
+    "graphql": "^15.x"
   }
 }
