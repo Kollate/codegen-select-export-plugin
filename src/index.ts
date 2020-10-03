@@ -28,7 +28,9 @@ export const plugin = (
   if (config.allEnumTypes) {
     exportNames = [
       ...exportNames,
-      ...types.filter((a) => isEnumType(schema.getType(a))),
+      ...types
+        .filter((a) => isEnumType(schema.getType(a)))
+        .filter((a) => !a.startsWith("__")),
     ];
   }
   return `export {\n${exportNames
